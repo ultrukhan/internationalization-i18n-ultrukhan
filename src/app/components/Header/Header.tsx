@@ -1,19 +1,21 @@
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import LangSwitcher from '../LangSwitcher';
 import styles from './Header.module.css';
 
-// Use the locale-aware Link from next-intl navigation (routing.ts), not next/link.
-
 export default function Header() {
+  const t = useTranslations('Navigation');
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
         <Link href="/" className={styles.link}>
-          to translate: home
+          {t('home')}
         </Link>
         <Link href="/about" className={styles.link}>
-          to translate: about
+          {t('about')}
         </Link>
-        <LangSwitcher caption={"to translate: changeLanguage"} />
+        <LangSwitcher caption={t('changeLanguage')} />
       </nav>
     </header>
   );

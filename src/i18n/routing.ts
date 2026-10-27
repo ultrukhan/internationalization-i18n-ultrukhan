@@ -1,3 +1,10 @@
-// next-intl v3 + Next.js 15: defineRouting + createNavigation for locales `en` and `uk`.
-// Do not follow current next-intl.dev docs (they use proxy.ts / Next.js 16).
+import { defineRouting } from 'next-intl/routing';
+import { createNavigation } from 'next-intl/navigation';
 
+export const routing = defineRouting({
+  locales: ['en', 'uk'],
+  defaultLocale: 'en',
+});
+
+export const { Link, redirect, usePathname, useRouter, getPathname } =
+  createNavigation(routing);
