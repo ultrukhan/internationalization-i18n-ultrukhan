@@ -1,0 +1,30 @@
+{
+  "name": "i18n",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --e2e\"",
+    "e2e:headless": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e --config supportFile=false\""
+  },
+  "dependencies": {
+    "next": "15.1.5",
+    "next-intl": "3.26.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "cypress": "^14.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.5",
+    "start-server-and-test": "^2.0.10",
+    "typescript": "^5"
+  }
+}

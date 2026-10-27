@@ -1,0 +1,58 @@
+/* HomePage.module.css */
+
+.home {
+  color: #333333;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--foreground);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: var(--foreground);
+}
+
+.contentSection {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.contentSection h2 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  color: var(--foreground);
+}
+
+.contentSection p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--foreground);
+}
+
+.learnMore {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.learnMoreButton {
+  background-color: #0070f3;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.learnMoreButton:hover {
+  background-color: #005bb5;
+}

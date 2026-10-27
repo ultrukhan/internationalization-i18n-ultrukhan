@@ -1,0 +1,8 @@
+/* HomePage.module.css */
+
+.home {
+  color: var(--foreground);
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
